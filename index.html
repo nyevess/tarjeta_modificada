@@ -1,62 +1,95 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <!-- SEO = Básico -->
-    <title></title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- SEO = Redes Sociales -->
-    <meta property="og:title" content="" />
-    <meta property="og:type" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
+<head>
+  <meta charset="utf-8" />
+  <!-- SEO = Básico -->
+  <title></title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- App Web, inidicar al navegador que elementos mostrar en un JSON -->
-    <link rel="manifest" href="site.webmanifest" />
-    <!-- icono de acceso para IOS -->
-    <link rel="apple-touch-icon" href="icon.png" />
-    <!-- Recordar que favicon.ico tiene que estar en el directorio inicial -->
+  <!-- SEO = Redes Sociales -->
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
 
-    <!-- links de estilos -->
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/index.css" />
-    <!-- Se cambia el tema de algunos navegadores -->
-    <meta name="theme-color" content="#fafafa" />
-  </head>
-  <body>
-    <!-- *** ESTRUCTURA SEMÁNTICA *** -->
-    <!-- Header (encabezado de la página, zona superior) -->
-    <header>
-      <!-- nav (el navegador de toda la web) -->
-      <nav>
+  <!-- App Web, inidicar al navegador que elementos mostrar en un JSON -->
+  <link rel="manifest" href="site.webmanifest" />
+  <!-- icono de acceso para IOS -->
+  <link rel="apple-touch-icon" href="icon.png" />
+  <!-- Recordar que favicon.ico tiene que estar en el directorio inicial -->
 
-      </nav>
-    </header>
-    <!-- Main (centro de la página, zona central) -->
-    <main>
-      <!-- section y article (posibilidades dentro de main) -->
+  <!-- links de estilos -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/index.css" />
+  <!-- Se cambia el tema de algunos navegadores -->
+  <meta name="theme-color" content="#fafafa" />
+</head>
 
-      <!-- Complemento Card Viajes -->
-      <figure class="card">
-        <img class="card_banner" src="img/banner.jpg" alt="isla tropical">
-        <figcaption class="card_texto">
-          <ul class="card_texto_grupo">
-            <li class="card_texto_grupo_pie pie_foto">pie de foto</li>
-            <li class="card_texto_grupo_subtitulo subtitulo">Título</li>
-            <li class="card_texto_grupo_parrafo parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus facilis ut, velit distinctio sit magnam deserunt sint error tempore hic perspiciatis, quas eaque culpa eveniet quos voluptate numquam sequi recusandae?</li>
-          </ul>
-        </figcaption>
-      </figure>
+<body>
+  <!-- *** ESTRUCTURA SEMÁNTICA *** -->
+  <!-- Header (encabezado de la página, zona superior) -->
+  <header>
+    <!-- nav (el navegador de toda la web) -->
+    <nav>
 
-    </main>
-    <!-- Footer (final de la página, zona inferior) -->
-    <footer>
-    </footer>
+    </nav>
+  </header>
+  <!-- Main (centro de la página, zona central) -->
+  <main>
+    <!-- Complemento Card Viajes -->
 
-    <!-- *** Google Analytics *** -->
-    <script src="https://www.google-analytics.com/analytics.js" async></script>
-  </body>
+    <section class="tarjeta">
+      <figure class="tarjeta_bannerArriba"></figure>
+
+      <article class="tarjeta_texto">
+         <article class="tarjeta_texto_tituloCirculo">
+          <h3>Hotel las Palmeras</h3>
+          <div class="precio">
+            95€ noche
+          </div>
+        </article>
+
+        <p class="tarjeta_texto_descripcion">Disfruta de tus vacaciones en
+          nuestro hotel en primera línea de playa
+          con las mejores vistas de la bahía de Alcudía.
+          Habitaciones luminosas, equipadas al 100%..
+          <a href="sabermas.html">leer más.</a>
+        </p>
+      </article>
+      <figure class="tarjeta_bannerAbajo"></figure>    
+    </section>
+
+
+
+    <section class="tarjeta">
+      <figure class="tarjeta_bannerArriba segundaTarjetaBanner1"></figure>
+
+      <article class="tarjeta_texto">
+         <article class="tarjeta_texto_tituloCirculo">
+          <h3>Hotel Ciudad de Palma</h3>
+          <div class="precio">
+            80€ noche
+          </div>
+        </article>
+
+        <p class="tarjeta_texto_descripcion">Disfruta de tus vacaciones o escapadas en nuestro
+          hotel céntrico en el corazón de Palma. Buenas conexiones con todos los servicios y todos los lugares...
+          <a href="sabermas.html">leer más.</a>
+        </p>
+      </article>
+      <figure class="tarjeta_bannerAbajo segundaTarjetaBanner2"></figure>    
+    </section>
+
+  </main>
+  <!-- Footer (final de la página, zona inferior) -->
+  <footer>
+  </footer>
+
+  <!-- *** Google Analytics *** -->
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
 </html>

@@ -4,14 +4,133 @@
 
 /* Tipografía */
 @font-face {
-    font-family: "";
-    src: url("") format("woof2"),
-         url("") format("woof");
+  font-family: "advanced";
+  src: url("../font/advanced.woff2") format("woff2"),
+    url("../font/advanced.woff") format("woff");
 }
 
+@font-face {
+  font-family: "summer";
+  src: url("../font/summer.woff2") format("woff2"),
+    url("../font/summer.woff") format("woff");
+}
 /* ******************************** */
 
 /* Colores */
 
 /* ******************************** */
 
+:root {
+  --color-verde: #C1EE7B;
+  --color-blanco: #f2f2f2;
+  --font-title: "advanced";
+  --font-general: "summer";
+}
+main {
+  color: var(--color-blanco);
+  font-family: var(--font-general);
+  font-size: 20px;
+
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  height: 100vh;
+
+}
+
+.tarjeta {
+  width: 300px;
+  border-radius: 10px;
+
+  background: linear-gradient(
+    to left bottom,
+    #00aaa9,
+    #57bfb0,
+    #84d3ba,
+    #ade7c7,
+    #d3fbd8
+  );
+  box-shadow: 5px 5px 5px var(--color-verde);
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* Banner arriba */
+.tarjeta_bannerArriba {
+    background-image: url(../img/bannerMar.jpg);
+    width: 300px;
+    height: 80px;
+    margin: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 2px solid var(--color-blanco);
+  }
+
+  /* imagen banner de abajo*/
+  .tarjeta_bannerAbajo {
+    background-image: url(../img/hotel.jpg);
+    width: 300px;
+    height: 150px;
+    margin: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top: 2px solid var(--color-blanco);
+  }
+/* caja de circulo precio y título */
+
+.tarjeta_texto_tituloCirculo{
+    font-family: var(--font-title);
+    color:var(--color-verde);
+
+    display: flex;
+    padding: 0 10px;
+    text-align: center;
+
+}
+
+/* circulo con precio */
+.precio {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+
+  color: white;
+  font-weight: bold;
+  background: linear-gradient(
+    to right top,
+    #ff5887,
+    #ff7165,
+    #ff973e,
+    #ffc210,
+    #e2eb12
+  );
+  border-radius: 50%;
+  font-size: 20px;
+  border: 5px double white;
+}
+
+/* párrafo */
+.tarjeta_texto_descripcion{
+    padding: 10px;
+}
+
+.tarjeta_texto_descripcion a{
+    text-decoration: none;
+    color:var(--color-verde);
+    margin: 0;
+}
+
+
+/* Tarjeta 2 */
+.segundaTarjetaBanner1{
+    background-image: url(../img/hotelciudad1.jpg);
+}
+
+.segundaTarjetaBanner2{
+    background-image: url(../img/hotelciudad2.jpg);
+}
